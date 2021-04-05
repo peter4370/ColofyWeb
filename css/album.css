@@ -1,0 +1,70 @@
+.p-container, .a-container {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 50px;
+}
+.p-container > h3,.a-container > h3{
+    text-align: left;
+    margin: 20px;
+}
+
+.hide-album, .hide-photo{
+    display: none;
+}
+
+.AlbumName{
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.album{
+    border-radius: 10px;
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+}
+.album img {
+    margin: 10px 0;
+    width: 250px;
+    height: 250px;
+}
+
+.album:hover {
+    color: white;
+    background-color: #505050;
+}
+
+.album a {
+    color: white;
+}
+
+.album a:visited {
+    color: white;
+}
+.photos {
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.photos img {
+    width: 250px;
+    height: 250px;
+}
+
+.photos a {
+    color: white;
+}
+
+.photos a:visited {
+    color: white;
+}
+
+.photos .Images {
+    width: 300px;
+    height: 300px;
+}
+

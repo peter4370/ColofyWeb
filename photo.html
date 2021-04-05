@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon_eye.png" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="/js/loginState.js"></script>
+    <script src="/js/alert.js"></script>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/photo.css">
+    <title>相片</title>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a id="logo" href="/"><img src="/img/Colorfy_logo_hover.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">社群</a>
+                </li>-->
+                <li class="nav-item" id="navProfile">
+                    <a class="nav-link" href="profile">個人檔案</a>
+                </li>
+                <li class="nav-item" id="navUpload">
+                    <a class="nav-link" href="/upload">上傳照片</a>
+                </li>
+            </ul>
+            <div id="login" class="islogin">
+                <a href="login">登入</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="imgbox">
+
+    </div>
+    <div id="info-container">
+        <div id="photo-info">
+            <div id="user-content">
+                <div class="userbox">
+                    <a href="#">
+                        <img src="/img/Face.jpg" alt="你朋友的帥臉">
+                    </a>
+                    <a href="#" class="username">Unknown</a>
+                </div>
+            </div>
+            <div id="photos-content">
+                「溫良恭儉，再也不讓」
+            </div>
+            <div id="album-content">
+                「單純的心，複雜的腦。」
+            </div>
+        </div>
+        <div id="social-info">
+            <div id="social-content">
+                <button type="button" class="btn btn-secondary">View</button>
+                <button type="button" class="btn btn-secondary">Like</button>
+                <button type="button" class="btn btn-secondary">Comment</button>
+            </div>
+            <div id="exif-info">
+                <div id="exif-left">
+                    <div id="lans" class="detail-info">相機資訊</div>
+                    <div id="flash" class="detail-info"><img src="/img/光圈.png" alt="光圈"><div class="detail-text">光圈</div></div>
+                    <div id="shutter" class="detail-info"><img src="/img/快門.png" alt=""><div class="detail-text">快門</div></div>
+                    <div id="ISO" class="detail-info"><img src="/img/ISO.png" alt=""><div class="detail-text">ISO</div></div>
+                </div>
+                <div id="exif-right">
+                    <div id="color" class="detail-info">發大財色</div>
+                    <div id="tags" class="detail-info">人財兩失、罷免</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="comment-box">
+        「立足台灣、胸懷大陸、放眼世界、征服宇宙」
+    </div>
+    <div id="comments">
+        「韓國瑜一心熱愛中華民國，為了中華民國，不惜『粉身碎骨』」
+    </div>
+
+</body>
+
+</html>

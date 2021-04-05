@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon_eye.png" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/module/_js/jquery-1.11.0.min.js"></script>
+    <script src="/js/profile.js"></script>
+    <script src="/js/loginState.js"></script>
+    <script src="/js/alert.js"></script>
+    <link rel="stylesheet" href="/css/album.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/friend.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a id="logo" href="/"><img src="/img/Colorfy_logo_hover.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--<li class="nav-item">
+                                    <a class="nav-link" href="#">社群</a>
+                                </li>-->
+                <li class="nav-item" id="navProfile">
+                    <a class="nav-link" href="/profile">個人檔案</a>
+                </li>
+                <li class="nav-item" id="navUpload">
+                    <a class="nav-link" href="/upload">上傳照片</a>
+                </li>
+            </ul>
+            <div id="login" class="islogin">
+                <a href="/login">登入</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profilebox">
+        <div id="profilebg" title="個人檔案背景圖">
+            <div id="profilepic" title="個人檔案大頭貼">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto mr-auto">
+                <div class="username">韓家軍</div>
+                <div id="intro">我是韓粉，非韓不投</div>
+                <!-- <input type="file" id="update-profilebg" value="修改背景圖片" class="btn">
+                                <input type="file" id="update-profilepic" value="修改個人圖片" class="btn"> -->
+
+            </div>
+            <div class="col-auto">
+                <input type="file" id="update-profilebg" class="pic-input ">
+                <span id="button-profilebg" class="pic-btn btn btn-secondary">修改背景圖片</span>
+                <input type="file" id="update-profilepic" class="pic-input">
+                <span id="button-profilepic" class="pic-btn btn btn-secondary">修改個人圖片</span>
+            </div>
+        </div>
+
+        <hr id="pfhr">
+        <div id="sub-nav">
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-photos-tab" data-toggle="pill" href="#pills-photos" role="tab"
+                        aria-controls="pills-photos" aria-selected="false">相片</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-photos" role="tabpanel" aria-labelledby="pills-photos-tab">
+                <div class="p-container">
+                    <div class="photos" style="height:300px">
+                        <a href="#">
+                            <img class="Images" src="/img/Face.jpg">
+                        </a>
+                    </div>
+                    <div class="photos" style="height:300px">
+                        <a href="#">
+                            <img class="Images" src="/img/Face.jpg">
+                        </a>
+                    </div>
+                    <div class="photos" style="height:300px">
+                        <a href="#">
+                            <img class="Images" src="/img/Face.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="hide-photo">
+                    <h3>尚未上傳相片</h3>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

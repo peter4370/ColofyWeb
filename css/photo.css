@@ -1,0 +1,185 @@
+body{
+    color: #d4d4d4;
+}
+#logo img {
+    height: 40px;
+}
+#imgbox {
+    background-color: gray;
+    margin: 40px 50px;
+    height: 500px;
+}
+
+#info-container {
+    margin: 35px auto;
+    /* padding: 10px; */
+    width: 1200px;
+    height: 500px;
+    /* border: 1px solid white; */
+    display: flex;
+    background-color: #3c3c3a;
+    border-radius: 10px;
+}
+
+#photo-info {
+    /* margin: 10px auto; */
+    border-right: 1px solid white;
+    width: 60%;
+    float: left;
+}
+
+#user-content {
+    /* border: 1px solid royalblue; */
+    margin: 20px 20px;
+    height: 100px;
+    width: 380px;
+}
+
+#photos-content {
+    /* border: 1px solid goldenrod; */
+    margin: 20px 100px 20px 20px;
+    height: 150px;
+}
+
+#album-content {
+    /* border: 1px solid indianred; */
+    margin: 20px 100px 20px 20px;
+    height: 150px;
+}
+
+#social-info {
+    /* margin: 10px auto; */
+    /* border: 1px solid white; */
+    padding: 10px;
+    width: 40%;
+    float: left;
+}
+
+#social-content {
+    /* border: 1px solid lightblue; */
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#social-content button{
+    margin: 0 10px;
+}
+#exif-info {
+    /* border: 1px solid palevioletred; */
+    margin: 10px;
+    padding-left: 10px;
+    height: 330px;
+}
+
+#comment-box {
+    margin: 20px auto;
+    background-color: #3c3c3a;
+    border-radius: 10px;
+    width: 950px;
+    height: 100px;
+}
+
+#comments {
+    margin: 40px auto;
+    background-color: #3c3c3a;
+    border-radius: 10px;
+    width: 950px;
+    height: 500px;
+}
+
+/* .detail-info {
+    border: 1px solid rebeccapurple;
+} */
+
+.detail-text{
+    float: right;
+    text-align: center;
+    margin: auto 0;
+    padding: 1px 5px;
+    height: 100%;
+}
+#exif-left{
+    margin: 10px 5px;
+    width: 200px;
+    float: left;
+}
+
+#exif-right {
+    margin: 10px 5px;
+    width: 200px;
+    float: right;
+}
+#lans, #color, #tags{
+    width: 100%;
+    height: 150px;
+}
+
+#flash,
+#shutter,
+#ISO {
+    width: 100%;
+    height: 30px;
+    margin: 18px 0;
+}
+
+#tags{
+    margin: 5px 0px 0px 0px;
+}
+.userbox {
+    text-align: left;
+    display: inline-block;
+    width: 380px;
+    height: 100px;
+}
+
+.userbox img {
+    margin: 10px 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.username {
+    margin: 10px auto;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+
+
+.userbox a {
+    margin: auto 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    width: 100px;
+}
+
+#photos-content, #album-content, .detail-info, #comments, #comment-box{
+    padding: 20px;
+}
+
+@media(max-width:768px){
+    #info-container{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    #photo-info, #social-info, #comment-box, #comments{
+        width: 100%;
+        float: none;
+    }
+    #photo-info, #social-info{
+        border: none;
+    }
+    #photos-content, #album-content{
+        margin: 20px;
+    }
+    #imgbox {
+        margin: 0 auto;
+    }
+}

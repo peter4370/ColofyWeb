@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon_eye.png" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="/module/_js/jquery-1.11.0.min.js"></script>
+    <script src="/js/loginState.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="/js/alert.js"></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a id="logo" href="/"><img src="/img/Colorfy_logo_hover.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">社群</a>
+                </li>-->
+                <li class="nav-item" id="navProfile">
+                    <a class="nav-link" href="/profile">個人檔案</a>
+                </li>
+                <li class="nav-item" id="navUpload">
+                    <a class="nav-link" href="/upload">上傳照片</a>
+                </li>
+            </ul>
+            <div id="login" class="islogin">
+                <a href="/login">登入</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mainbox">
+        <div class="signupBox">
+            <div class="logo"><img src="/img/Colorfy_logo.png" alt="" srcset=""></div>
+            <form id="signUpForm" action="">
+                <div class="textbox" id="firstName">
+                    <input type="text" placeholder="First Name">
+                    <span class="check-message hidden">必填</span>
+                </div>
+                <div class="textbox" id="lastName">
+                    <input type="text" placeholder="Last Name">
+                    <span class="check-message hidden">必填</span>
+                </div>
+                <div class="textbox" id="nickName">
+                    <input type="text" placeholder="暱稱">
+                    <span class="check-message hidden">必填</span>
+                </div>
+                <div class="textbox" id="bday">
+                    <input type="date" placeholder="生日">
+                    <span class="check-message hidden"></span>
+                </div>
+                <div class="textbox" id="email">
+                    <input type="email" placeholder="電子郵件">
+                    <span class="check-message hidden">必填</span>
+                </div>
+
+                <div class="textbox" id="password">
+                    <input type="password" placeholder="密碼">
+                    <span class="check-message hidden">必填</span>
+                </div>
+
+                <div class="options">
+                    <label class="remember-me">
+                        <span class="checkbox">
+                            <input type="checkbox">
+                            <span class="checked"></span>
+                        </span>
+                        同意 Colorfy 的隱私權條款
+                    </label>
+                </div>
+                <input id='submit' type="submit" value="註冊" class="login-btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

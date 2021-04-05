@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Gothic;
+    src: url(fonts/COPRGTB.woff);
+}
+
+@font-face {
+    font-family: GothicL;
+    src: url(fonts/segoeui.woff);
+}
+
+@font-face {
+    font-family: microblack;
+    src: url(fonts/msjg.tcc);
+}
+
+/*temperary*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #404040;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #303030;
+    min-height: 100vh;
+}
+
+#login,
+#login>a,
+#login>a:hover {
+    font-size: 18px;
+    color: #d4d4d4;
+    display: block;
+    text-decoration: none;
+    margin-right: 15px;
+    line-height: 45px;
+    float: right;
+}
+
+#login>a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#logo img {
+    height: 40px;
+}
+
+/*alert window*/
+#alertWindow {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(60, 60, 58, 0.9);
+    width: 500px;
+    margin-left: -249px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    z-index: 100;
+    padding: 20px;
+    border: #3c3c3a 10px solid;
+    border-radius: 10px;
+    font-size: 22px;
+}
+#alertWindow > input[type="button"] {
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    background: #007bff;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+#alertWindow > input[type="button"]:hover {
+    background: #0478e4;
+}

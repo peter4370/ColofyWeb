@@ -1,0 +1,52 @@
+﻿#uploadBox, #createAlbum {
+    margin: 100px auto;
+    padding: 0;
+    background-color: rgb(126, 126, 126);
+    border-radius: 10px;
+    width: 470px;
+    padding: 30px 60px;
+}
+#createAlbum {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+input[type=submit], input[type=button] {
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    background: #2e2e2e;
+    color: #d4d4d4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    transform: .3s linear;
+}
+
+input[type=submit] {
+    background-color: #0478e4;
+    color: #d4d4d4;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #d4d4d4;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    color: #2e2e2e;
+}
+
+button, input, optgroup, select, textarea {
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}

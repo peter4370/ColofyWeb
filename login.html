@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon_eye.png" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="/module/_js/jquery-1.11.0.min.js"></script>
+    <script src="/js/loginState.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/alert.js"></script>
+    <title>Login</title>
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a id="logo" href="/"><img src="/img/Colorfy_logo_hover.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">社群</a>
+                </li>-->
+                <li class="nav-item" id="navProfile">
+                    <a class="nav-link" href="/profile">個人檔案</a>
+                </li>
+                <li class="nav-item" id="navUpload">
+                    <a class="nav-link" href="/upload">上傳照片</a>
+                </li>
+            </ul>
+            <div id="login" class="islogin">
+                <a href="/login">登入</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="loginBox">
+        <div class="logo"><img src="/img/Colorfy_logo.png" alt="" srcset=""></div>
+        <form id="loginForm" action="">
+            <div class="textbox">
+                <input id="account" type="text" placeholder="用戶名稱或電子郵件">
+                <span class="check-message hidden">必填</span>
+            </div>
+
+            <div class="textbox">
+                <input id="password" type="password" placeholder="密碼">
+                <span class="check-message hidden">必填</span>
+            </div>
+
+            <div class="options">
+                <label class="remember-me">
+                    <span class="checkbox">
+                        <input type="checkbox">
+                        <span class="checked"></span>
+                    </span>
+                    記住我
+                </label>
+                <a href="#">忘記密碼</a>
+            </div>
+
+            <input type="submit" value="登入" class="login-btn" disabled>
+        </form>
+        <div class="dont-have-account">
+            還沒註冊帳號嗎？
+            <a href="/signup">馬上註冊</a>
+        </div>
+    </div>
+</body>
+</html>
